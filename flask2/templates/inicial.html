@@ -36,15 +36,15 @@
 </head>
 
 <body>
-  <a href="{{ url_for('form')}}">Adicionar informações</a>
-  <a href="{{ url_for('ver_cookies')}}">Ver informações</a>
+  <a href="{{ url_for('cadastro')}}">Adicionar informações</a>
+  <a href="{{ url_for('preferencias')}}">Ver informações</a>
   <form action="{{url_for('recomendacoes')}}" method="GET">
     <select name="gen">
-      <option value="drama">Drama</option>
-      <option value="acao">Ação</option>
-      <option value="ficcao">Ficção</option>
-      <option value="terror">Terror</option>
-      <option value="comedia">Comédia</option>
+      <option value="Drama">Drama</option>
+      <option value="Ação">Ação</option>
+      <option value="Ficção">Ficção</option>
+      <option value="Terror">Terror</option>
+      <option value="Comédia">Comédia</option>
     </select>
     <button type="submit">submit</button>
   </form>
