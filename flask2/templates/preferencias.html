@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table,
+        th,
+        tr{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>PREFERENCIA</th>
+                <th>RECEBER POR EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>{{ nome }}</th>
+                <th>{{ gen }}</th>
+                <th>{{ email }}</th>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{{url_for('index')}}"></a>
+</body>
+</html>

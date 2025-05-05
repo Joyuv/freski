@@ -31,7 +31,7 @@ def ver_cookies():
     email = request.cookies.get("email")
     genero = request.cookies.get("genero")
     nome = request.cookies.get("nome")
-    return f"<h1>{nome}: {genero} / notificação {email}</h1>"
+    return render_template('preferencias.html', gen=genero, email=email, nome=nome)
 
 @app.route('/recomendacoes')
 def recomendacoes():
