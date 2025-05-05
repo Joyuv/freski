@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    * {
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 1em;
+      color: white;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 100vh;
+      gap: 1em;
+    }
+
+    html {
+      background-color: white;
+    }
+
+    a {
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="{{ url_for('form')}}">Adicionar informações</a>
+  <a href="{{ url_for('ver_cookies')}}">Ver informações</a>
+  <form action="{{url_for('recomendacoes')}}" method="GET">
+    <select name="gen">
+      <option value="drama">Ação</option>
+      <option value="acao">Ação</option>
+      <option value="ficcao">Ação</option>
+      <option value="terror">Ação</option>
+      <option value="comedia">Ação</option>
+    </select>
+    <button type="submit">submit</button>
+  </form>
+</body>
+
+</html>

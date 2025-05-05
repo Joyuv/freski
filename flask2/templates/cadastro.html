@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <a href="{{url_for('index')}}">voltar</a>
+  <form action="{{url_for('cookie')}}" method="post" name="form">
+    <input placeholder="nome" name="nome" type="text">
+    <br>
+    <select name="genr">
+      <option value="acao">Ação</option>
+      <option value="comed">Comédia</option>
+      <option value="drama">Drama</option>
+      <option value="ficcao">Ficção</option>
+      <option value="terror">Terror</option>
+    </select>
+    <br>
+    <input type="checkbox" name="email" value="">
+    <label for="email">Receber notificaçõs por email?</label>
+    <br>
+    <button type="submit">butao</button>
+  </form>
+</body>
+
+</html>
