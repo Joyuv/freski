@@ -41,7 +41,7 @@ Você deverá criar uma aplicação com as seguintes páginas:
 
 ## Como executar
 
-* crie um venv com os comandos `python3 -m venv env` no linux e `py` ou `python -m venv env` no windows, após a instalação do venv abra-o com `source env/Scripts/activate` no windows gitbash e `source env/bin/activate` ou `activate.fish` se estiver usando o shell fish. Após isso baixar o flask com `pip install flask` após a instalação ser concluida abra o diretório da atividade e rode `flask run --debug`
+* crie um venv com os comandos `python3 -m venv env` no linux e `py` ou `python -m venv env` no windows, após a instalação do venv abra-o com `source env/Scripts/activate` no windows gitbash e `source env/bin/activate` ou `activate.fish` se estiver usando o shell fish no linux. Após isso baixar o flask com `pip install flask` após a instalação ser concluida abra o diretório da atividade e rode `flask run --debug`
 
 ## Recursos utilizados
 
